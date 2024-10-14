@@ -1,0 +1,158 @@
+
+
+#main{
+    display: grid;
+    
+    /* background-color: rgb(219, 219, 0);
+     */
+    background-image: url('../style/images/img1.PNG');
+    background-attachment: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: 50% 49%;
+
+}
+#box-left{
+    /* border-right: 1px dotted black; */
+    display: grid;
+    grid-template-rows: 5em auto 5em;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+/* main heading */
+#main-heading{
+    font-size: 3.5em;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+/* description-area */
+#description-area{
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#icon-area{
+    display: flex;
+    gap: 20px;
+}
+
+#icon-area .icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    /* background-color: beige; */
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+/* right side of card */
+#box-right{
+    padding: 20px;
+}
+
+#main-img-container{
+    width:calc(100% - 20px);
+    height:calc(100% - 20px );
+    margin: auto;
+    /* background-color: blueviolet; */
+    background-image: url('../style/images/img2.PNG');
+    background-attachment: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#image-top{
+    max-height:calc(30% - 10px);
+    max-width: calc(20%);
+    /* margin: auto; */
+    position: absolute;
+    top: -30px;
+    right: 20px;
+
+}
+#image-top img{
+    height: 100%;
+    width: 100%;
+    top: -40px;
+}
+#image-left{
+    max-height:calc(30% - 10px);
+    max-width: calc(25%);
+    margin: auto;
+    position: absolute;
+    bottom: -40px;
+    left:-20px;
+
+}
+#image-left img{
+    height: 100%;
+    width: 100%;
+    top: -40px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    
+    /* main heading */
+    #main-heading{
+        font-size: 2.5em;
+        font-weight: 500;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+    }
+    
+    /* description-area */
+    #description-area{
+        display: none;
+    
+    }
+    
+    /* icon area */
+    
+    #icon-area{
+        padding-top: 60px;
+        gap: 10px;
+
+
+    }
+    #icon-area .icon{
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: beige;
+        /* margin: auto; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    
+    
+    /* right side of card */
+    #box-right{
+        display: none;
+    }
+  }
+
+@media only screen and (max-width: 900px) {
+
+    
+    #main{
+        display: block;
+    }
+    
+    /* right side of card */
+    #box-right{
+        display: none;
+    }
+  }
